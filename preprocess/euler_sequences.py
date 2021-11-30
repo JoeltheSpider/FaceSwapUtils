@@ -89,7 +89,7 @@ def main(input_path, output_path=None, seq_postfix='_dsfd_seq.pkl', output_postf
                 # render_img = tensor2bgr(frame_cropped_tensor_batch[b]).copy()
                 # cv2.putText(render_img, '(%.2f, %.2f, %.2f)' % (curr_euler[0], curr_euler[1], curr_euler[2]), (15, 15),
                 #             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
-                # cv2.imshow('render_img', render_img)
+                # cv2_imshow('render_img', render_img)
                 # if cv2.waitKey(0) & 0xFF == ord('q'):
                 #     break
 

@@ -64,7 +64,7 @@ def main(input_path, output_path=None, postfix='_dsfd_seq.pkl', smooth=False, fp
         # Render
         if out_vid is not None:
             out_vid.write(render_img)
-        # cv2.imshow('render_img', render_img)
+        # cv2_imshow('render_img', render_img)
         delay = np.round(1000.0 / fps).astype(int) if fps > 1e-5 else 0
         if cv2.waitKey(delay) & 0xFF == ord('q'):
             break
