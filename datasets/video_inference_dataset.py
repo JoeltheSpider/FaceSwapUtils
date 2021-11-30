@@ -5,7 +5,7 @@ import torch.utils.data as data
 import numpy as np
 import cv2
 import torch
-from FaceSwapUtils.utils.video_utils import Sequence, get_video_info
+from fsgan.utils.video_utils import Sequence, get_video_info
 
 
 class VideoInferenceDataset(data.Dataset):

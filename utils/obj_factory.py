@@ -5,21 +5,21 @@ from functools import partial
 
 KNOWN_MODULES = {
     # datasets
-    'image_list_dataset': 'FaceSwapUtils.datasets.image_list_dataset',
-    'opencv_video_seq_dataset': 'FaceSwapUtils.datasets.opencv_video_seq_dataset',
-    'seq_dataset': 'FaceSwapUtils.datasets.seq_dataset',
-    'img_landmarks_transforms': 'FaceSwapUtils.datasets.img_landmarks_transforms',
-    'img_lms_pose_transforms': 'FaceSwapUtils.datasets.img_lms_pose_transforms',
+    'image_list_dataset': 'fsgan.datasets.image_list_dataset',
+    'opencv_video_seq_dataset': 'fsgan.datasets.opencv_video_seq_dataset',
+    'seq_dataset': 'fsgan.datasets.seq_dataset',
+    'img_landmarks_transforms': 'fsgan.datasets.img_landmarks_transforms',
+    'img_lms_pose_transforms': 'fsgan.datasets.img_lms_pose_transforms',
     'transforms': 'torchvision.transforms',
 
     # models
-    'res_unet': 'FaceSwapUtils.models.res_unet',
-    'res_unet_split': 'FaceSwapUtils.models.res_unet_split',
-    'res_unet_msba': 'FaceSwapUtils.models.res_unet_msba',
+    'res_unet': 'fsgan.models.res_unet',
+    'res_unet_split': 'fsgan.models.res_unet_split',
+    'res_unet_msba': 'fsgan.models.res_unet_msba',
 
     # criterions
-    'vgg_loss': 'FaceSwapUtils.criterions.vgg_loss',
-    'gan_loss': 'FaceSwapUtils.criterions.gan_loss',
+    'vgg_loss': 'fsgan.criterions.vgg_loss',
+    'gan_loss': 'fsgan.criterions.gan_loss',
 
     # Torch
     'nn': 'torch.nn',

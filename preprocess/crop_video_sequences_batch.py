@@ -4,7 +4,7 @@ from multiprocessing import Pool
 from functools import partial
 from itertools import groupby
 import numpy as np
-from FaceSwapUtils.preprocess.crop_video_sequences import main as crop_video_sequences
+from fsgan.preprocess.crop_video_sequences import main as crop_video_sequences
 
 
 def parse_videos(root):

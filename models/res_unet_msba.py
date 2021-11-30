@@ -2,8 +2,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
-from FaceSwapUtils.utils.img_utils import create_pyramid
-from FaceSwapUtils.models.msba import MSBA
+from fsgan.utils.img_utils import create_pyramid
+from fsgan.models.msba import MSBA
 
 
 def make_conv_block(in_nc, out_nc, kernel_size=3, stride=1, padding=None, bias=False,

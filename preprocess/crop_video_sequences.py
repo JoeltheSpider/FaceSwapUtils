@@ -4,8 +4,8 @@ import pickle
 from tqdm import tqdm
 import numpy as np
 import cv2
-from FaceSwapUtils.utils.bbox_utils import scale_bbox, crop_img
-from FaceSwapUtils.utils.video_utils import Sequence
+from fsgan.utils.bbox_utils import scale_bbox, crop_img
+from fsgan.utils.video_utils import Sequence
 
 
 def main(input_path, output_dir=None, cache_path=None, seq_postfix='_dsfd_seq.pkl', resolution=256, crop_scale=2.0,

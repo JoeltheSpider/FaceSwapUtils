@@ -10,8 +10,8 @@ from PIL import Image
 import torch
 import torchvision.transforms.functional as F
 import torchvision.transforms as transforms
-from FaceSwapUtils.utils.bbox_utils import scale_bbox, crop_img
-from FaceSwapUtils.utils.landmarks_utils import hflip_face_landmarks_98pts
+from fsgan.utils.bbox_utils import scale_bbox, crop_img
+from fsgan.utils.landmarks_utils import hflip_face_landmarks_98pts
 
 
 def interpolation_str2int(interpolation):

@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from FaceSwapUtils.utils.img_utils import create_pyramid
+from fsgan.utils.img_utils import create_pyramid
 
 
 def make_conv_block(in_nc, out_nc, kernel_size=3, stride=1, padding=None, bias=False, padding_type='reflect',

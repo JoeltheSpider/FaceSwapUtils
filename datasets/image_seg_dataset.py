@@ -6,8 +6,8 @@ import cv2
 from PIL import Image
 import torch
 import torch.utils.data as data
-from FaceSwapUtils.datasets.image_list_dataset import ImageListDataset
-import FaceSwapUtils.datasets.img_landmarks_transforms as img_landmarks_transforms
+from fsgan.datasets.image_list_dataset import ImageListDataset
+import fsgan.datasets.img_landmarks_transforms as img_landmarks_transforms
 
 
 def seg_label2img(seg, classes=3):

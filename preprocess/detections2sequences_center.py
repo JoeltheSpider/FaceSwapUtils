@@ -3,10 +3,9 @@ import pickle
 from tqdm import tqdm
 import numpy as np
 import cv2
-from FaceSwapUtils.utils.bbox_utils import batch_iou
-from FaceSwapUtils.utils.bbox_utils import smooth_bboxes
-from FaceSwapUtils.utils.video_utils import Sequence
-# from fsgan.utils.video_utils import Sequence, smooth_detections_avg_center
+from fsgan.utils.bbox_utils import batch_iou
+from fsgan.utils.bbox_utils import smooth_bboxes
+from fsgan.utils.video_utils import Sequence
 
 
 def main(input_path, output_path=None, cache_path=None, iou_thresh=0.75, min_length=10, min_size=64, crop_scale=1.2,

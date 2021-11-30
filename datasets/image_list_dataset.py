@@ -6,7 +6,7 @@ import cv2
 import torch.utils.data as data
 from torchvision.datasets.vision import VisionDataset
 from torchvision.datasets.folder import default_loader
-import FaceSwapUtils.datasets.img_landmarks_transforms as img_landmarks_transforms
+import fsgan.datasets.img_landmarks_transforms as img_landmarks_transforms
 
 
 def find_classes(img_rel_paths):

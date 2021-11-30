@@ -5,10 +5,10 @@ import torch.utils.data as data
 import numpy as np
 import cv2
 import torch
-from FaceSwapUtils.utils.utils import random_pair, random_pair_range
-from FaceSwapUtils.utils.video_utils import Sequence, get_video_info
-import FaceSwapUtils.datasets.img_lms_pose_transforms as img_lms_pose_transforms
-from FaceSwapUtils.utils.seg_utils import decode_binary_mask
+from fsgan.utils.utils import random_pair, random_pair_range
+from fsgan.utils.video_utils import Sequence, get_video_info
+import fsgan.datasets.img_lms_pose_transforms as img_lms_pose_transforms
+from fsgan.utils.seg_utils import decode_binary_mask
 
 
 def parse_file_paths(root, file_list, seq_postfix='_dsfd_seq.pkl', postfixes=('.mp4',)):
