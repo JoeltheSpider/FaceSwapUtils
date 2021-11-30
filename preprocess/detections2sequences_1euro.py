@@ -76,7 +76,7 @@ def main(input_path, cache_path=None, output_path=None, iou_thresh=0.75, min_len
                 text_pos = (rect[:2] + np.array([0, -8])).astype('float32')
                 cv2.putText(render_img, 'id: %d' % seq.id, tuple(text_pos),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1, cv2.LINE_AA)
-            cv2.imshow('render_img', render_img)
+            # cv2.imshow('render_img', render_img)
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
 
