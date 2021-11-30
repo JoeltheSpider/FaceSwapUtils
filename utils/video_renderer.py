@@ -2,8 +2,8 @@ import numpy as np
 import cv2
 import torch
 import torch.multiprocessing as mp
-from fsgan.utils.img_utils import tensor2bgr
-from fsgan.utils.bbox_utils import crop2img, scale_bbox
+from FaceSwapUtils.utils.img_utils import tensor2bgr
+from FaceSwapUtils.utils.bbox_utils import crop2img, scale_bbox
 
 
 class VideoRenderer(mp.Process):

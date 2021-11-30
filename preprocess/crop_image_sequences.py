@@ -2,8 +2,8 @@ import os
 import pickle
 import numpy as np
 import cv2
-from fsgan.utils.bbox_utils import scale_bbox, crop_img
-from fsgan.utils.video_utils import Sequence
+from FaceSwapUtils.utils.bbox_utils import scale_bbox, crop_img
+from FaceSwapUtils.utils.video_utils import Sequence
 
 
 def main(input_path, output_dir=None, cache_path=None, seq_postfix='_dsfd_seq.pkl', out_postfix='.jpg', resolution=256,

@@ -19,17 +19,17 @@ import torch.nn as nn
 from torch.utils.data import DataLoader
 import torchvision.transforms as transforms
 from face_detection_dsfd.face_detector import FaceDetector
-from fsgan.utils.utils import set_device, load_model
-from fsgan.preprocess.detections2sequences_center import main as detections2sequences_main
-from fsgan.preprocess.crop_video_sequences import main as crop_video_sequences_main
-from fsgan.preprocess.crop_image_sequences import main as crop_image_sequences_main
-from fsgan.datasets.video_inference_dataset import VideoInferenceDataset
-import fsgan.datasets.img_landmarks_transforms as img_landmarks_transforms
-from fsgan.datasets.img_landmarks_transforms import Resize, ToTensor
-from fsgan.utils.temporal_smoothing import TemporalSmoothing
-from fsgan.utils.landmarks_utils import LandmarksHeatMapEncoder, smooth_landmarks_98pts
-from fsgan.utils.seg_utils import encode_binary_mask, remove_inner_mouth
-from fsgan.utils.batch import main as batch
+from FaceSwapUtils.utils.utils import set_device, load_model
+from FaceSwapUtils.preprocess.detections2sequences_center import main as detections2sequences_main
+from FaceSwapUtils.preprocess.crop_video_sequences import main as crop_video_sequences_main
+from FaceSwapUtils.preprocess.crop_image_sequences import main as crop_image_sequences_main
+from FaceSwapUtils.datasets.video_inference_dataset import VideoInferenceDataset
+import FaceSwapUtils.datasets.img_landmarks_transforms as img_landmarks_transforms
+from FaceSwapUtils.datasets.img_landmarks_transforms import Resize, ToTensor
+from FaceSwapUtils.utils.temporal_smoothing import TemporalSmoothing
+from FaceSwapUtils.utils.landmarks_utils import LandmarksHeatMapEncoder, smooth_landmarks_98pts
+from FaceSwapUtils.utils.seg_utils import encode_binary_mask, remove_inner_mouth
+from FaceSwapUtils.utils.batch import main as batch
 
 
 base_parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter, add_help=False)

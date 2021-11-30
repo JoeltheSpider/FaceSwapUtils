@@ -1,6 +1,6 @@
 import torch
 import numpy as np
-from fsgan.utils.confusionmatrix import ConfusionMatrix
+from FaceSwapUtils.utils.confusionmatrix import ConfusionMatrix
 
 
 # Adapted from: https://github.com/davidtvs/PyTorch-ENet/blob/master/metric/iou.py

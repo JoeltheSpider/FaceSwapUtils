@@ -3,7 +3,7 @@ import pickle
 from tqdm import tqdm
 import numpy as np
 import cv2
-from fsgan.utils.video_utils import Sequence
+from FaceSwapUtils.utils.video_utils import Sequence
 
 
 def main(input_path, output_path=None, postfix='_dsfd_seq.pkl', smooth=False, fps=None):

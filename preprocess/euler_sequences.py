@@ -6,12 +6,12 @@ import cv2
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from fsgan.models.hopenet import Hopenet
-from fsgan.utils.utils import set_device
-from fsgan.utils.bbox_utils import scale_bbox, crop_img
-from fsgan.utils.img_utils import rgb2tensor
-from fsgan.utils.video_utils import Sequence
-from fsgan.utils.img_utils import tensor2bgr    # Debug
+from FaceSwapUtils.models.hopenet import Hopenet
+from FaceSwapUtils.utils.utils import set_device
+from FaceSwapUtils.utils.bbox_utils import scale_bbox, crop_img
+from FaceSwapUtils.utils.img_utils import rgb2tensor
+from FaceSwapUtils.utils.video_utils import Sequence
+from FaceSwapUtils.utils.img_utils import tensor2bgr    # Debug
 
 
 def main(input_path, output_path=None, seq_postfix='_dsfd_seq.pkl', output_postfix='_dsfd_seq_lms_euler.pkl',

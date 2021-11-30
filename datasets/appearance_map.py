@@ -7,8 +7,8 @@ import cv2
 from scipy.spatial import cKDTree, Delaunay
 import torch
 import torch.utils.data as data
-from fsgan.utils.seg_utils import decode_binary_mask
-from fsgan.utils.video_utils import get_video_info
+from FaceSwapUtils.utils.seg_utils import decode_binary_mask
+from FaceSwapUtils.utils.video_utils import get_video_info
 
 
 def fuse_clusters(points, r=0.5):

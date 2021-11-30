@@ -3,7 +3,7 @@
 import numpy as np
 from itertools import count
 import ffmpeg
-from fsgan.utils.one_euro_filter import OneEuroFilter
+from FaceSwapUtils.utils.one_euro_filter import OneEuroFilter
 
 
 class Sequence(object):

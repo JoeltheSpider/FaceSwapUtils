@@ -7,7 +7,7 @@ import inspect
 from itertools import product
 import traceback
 import logging
-from fsgan.utils.obj_factory import partial_obj_factory
+from FaceSwapUtils.utils.obj_factory import partial_obj_factory
 
 
 parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter)

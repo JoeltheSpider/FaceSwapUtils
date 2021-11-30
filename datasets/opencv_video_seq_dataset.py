@@ -5,9 +5,9 @@ import torch.utils.data as data
 import numpy as np
 import cv2
 import torch
-from fsgan.utils.utils import random_pair, random_pair_range
-from fsgan.utils.video_utils import Sequence
-import fsgan.datasets.img_landmarks_transforms as img_landmarks_transforms
+from FaceSwapUtils.utils.utils import random_pair, random_pair_range
+from FaceSwapUtils.utils.video_utils import Sequence
+import FaceSwapUtils.datasets.img_landmarks_transforms as img_landmarks_transforms
 
 
 def is_video(fname):
